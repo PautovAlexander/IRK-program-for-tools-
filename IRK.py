@@ -354,8 +354,7 @@ class Ui_MainWindow(object):
     def show_list_today_01(self):
         print(datetime.today())
         # Цикл для вывода информации о дате поверки сегодня
-        for row in range(4,
-                         sheet.max_row + 1):  # атрибут max_row+1 включает все строки файла и +1 захватывает последнюю
+        for row in range(4,sheet.max_row + 1):  # атрибут max_row+1 включает все строки файла и +1 захватывает последнюю
             numbers = sheet[row][0].value
             name = sheet[row][1].value
             obozn = sheet[row][2].value
